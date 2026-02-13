@@ -1,0 +1,82 @@
+openapi: 3.0.4
+info:
+  title: Content Filter
+  description: >-
+    Content Filter checks URLs against a comprehensive blocklist of 200,000+
+    domains categorized as ads-malware, fake news, gambling, adult content, or
+    social media. Returns the specific category for blocked domains.
+  termsOfService: https://apiverve.com/terms/
+  contact:
+    name: APIVerve Support
+    email: hello@apiverve.com
+    url: https://apiverve.com/contact
+  version: 1.0.0
+externalDocs:
+  description: Learn more about APIVerve
+  url: https://docs.apiverve.com?utm_source=openapi
+servers:
+  - url: https://api.apiverve.com/
+paths:
+  /v1/contentfilter:
+    post:
+      summary: Check URL Safety
+      description: >-
+        Checks whether a URL or domain appears in the content filter blocklist
+        covering fake news, gambling, adult content, and social media.
+      operationId: contentfilter
+      parameters: []
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                    description: status
+                  error:
+                    type: string
+                    description: error
+                  data:
+                    type: object
+                    description: data
+              example:
+                status: ok
+                error: null
+                data:
+                  url: https://www.pornhub.com/video/123
+                  domain: www.pornhub.com
+                  isBlocked: true
+                  category: porn
+                  matchedDomain: pornhub.com
+                  safetyRating: unsafe
+        '401':
+          description: Your request was not authorized, or your API Key was invalid
+        '404':
+          description: Requested resource was not found
+        '500':
+          description: A server error has occurred, try again later
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                url:
+                  type: string
+                  description: The URL or domain to check
+              required:
+                - url
+components:
+  securitySchemes:
+    api_key:
+      type: apiKey
+      name: x-api-key
+      in: header
+security:
+  - api_key: []
+sampleRequest:
+  url: https://www.pornhub.com/video/123
