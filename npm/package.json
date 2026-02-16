@@ -1,6 +1,6 @@
 {
   "name": "@apiverve/contentfilter",
-  "version": "1.1.13",
+  "version": "1.1.14",
   "description": "Content Filter checks URLs against a comprehensive blocklist of 200,000+ domains categorized as ads-malware, fake news, gambling, adult content, or social media. Returns the specific category for blocked domains.",
   "main": "index.js",
   "types": "index.d.ts",
