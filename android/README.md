@@ -26,7 +26,7 @@ Add the dependency:
 
 ```gradle
 dependencies {
-    implementation 'com.github.apiverve:contentfilter-api:1.1.13'
+    implementation 'com.github.apiverve:contentfilter-api:1.1.14'
 }
 ```
 
@@ -47,7 +47,7 @@ ContentFilterAPIClient client = new ContentFilterAPIClient("YOUR_API_KEY");
 try {
     // Prepare request parameters
     Map<String, Object> parameters = new HashMap<>();
-    parameters.put("url", "https://example-gambling-site.com/play");
+    parameters.put("url", "https://www.pornhub.com/video/123");
 
     // Execute the request
     APIResponse response = client.execute(parameters);
