@@ -221,8 +221,9 @@ from apiverve_contentfilter.apiClient import ContentfilterAPIClient
 
 api = ContentfilterAPIClient("[YOUR_API_KEY]")
 
+query = { "url": "https://www.pornhub.com/video/123" }
+
 try:
-    query = { "url": "https://www.pornhub.com/video/123" }
     result = api.execute(query)
     print(result)
 finally:
