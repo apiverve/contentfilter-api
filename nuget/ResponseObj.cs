@@ -25,6 +25,9 @@ namespace APIVerve.API.ContentFilter
 
         [JsonProperty("data")]
         public Data Data { get; set; }
+
+        [JsonProperty("premium")]
+        public Premium Premium { get; set; }
     }
 
     public partial class Data
@@ -36,7 +39,7 @@ namespace APIVerve.API.ContentFilter
         public string Domain { get; set; }
 
         [JsonProperty("isBlocked")]
-        public bool IsBlocked { get; set; }
+        public bool? IsBlocked { get; set; }
 
         [JsonProperty("category")]
         public string Category { get; set; }
@@ -46,5 +49,17 @@ namespace APIVerve.API.ContentFilter
 
         [JsonProperty("safetyRating")]
         public string SafetyRating { get; set; }
+    }
+
+    public partial class Premium
+    {
+        [JsonProperty("message")]
+        public string Message { get; set; }
+
+        [JsonProperty("upgrade_url")]
+        public Uri UpgradeUrl { get; set; }
+
+        [JsonProperty("locked_fields")]
+        public string[] LockedFields { get; set; }
     }
 }
