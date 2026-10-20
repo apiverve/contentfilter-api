@@ -67,7 +67,7 @@ namespace APIVerve.API.ContentFilter
         /// <summary>Validation rules for parameters</summary>
         private static readonly Dictionary<string, ValidationRule> _validationRules = new Dictionary<string, ValidationRule>
         {
-            { "url", new ValidationRule { Type = "string", Required = true, Format = "url" } }
+            { "url", new ValidationRule { Type = "string", Required = true } }
         };
 
         /// <summary>Format validation patterns</summary>

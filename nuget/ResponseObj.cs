@@ -49,6 +49,9 @@ namespace APIVerve.API.ContentFilter
 
         [JsonProperty("safetyRating")]
         public string SafetyRating { get; set; }
+
+        [JsonProperty("categories")]
+        public string[] Categories { get; set; }
     }
 
     public partial class Premium
