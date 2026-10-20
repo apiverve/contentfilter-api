@@ -30,7 +30,7 @@ class contentfilterWrapper {
         this.baseURL = 'https://api.apiverve.com/v1/contentfilter';
 
         // Validation rules for parameters (generated from schema)
-        this.validationRules = {"url":{"type":"string","required":true,"format":"url"}};
+        this.validationRules = {"url":{"type":"string","required":true}};
     }
 
     /**

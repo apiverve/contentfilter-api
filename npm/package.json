@@ -1,7 +1,7 @@
 {
   "name": "@apiverve/contentfilter",
-  "version": "1.2.0",
-  "description": "Content Filter checks URLs against a comprehensive blocklist of 200,000+ domains categorized as ads-malware, fake news, gambling, adult content, or social media. Returns the specific category for blocked domains.",
+  "version": "1.2.2",
+  "description": "Content Filter checks URLs against a comprehensive blocklist of 200,000+ domains categorized as ads-malware, fake news, gambling, adult content, or social media. Returns the specific category for blocked domains, plus every category a domain appears in across a 1.7M-domain index.",
   "main": "index.js",
   "types": "index.d.ts",
   "sideEffects": false,
@@ -34,7 +34,7 @@
   "bugs": {
     "url": "https://github.com/apiverve/contentfilter-api/issues"
   },
-  "homepage": "https://apiverve.com/marketplace/contentfilter?utm_source=npm&utm_medium=homepage",
+  "homepage": "https://apiverve.com/marketplace/contentfilter?utm_source=npm&utm_medium=referral&utm_content=homepage",
   "devDependencies": {
     "mocha": "^11.0.1",
     "chai": "^5.1.2",

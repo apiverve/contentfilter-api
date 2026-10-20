@@ -31,6 +31,7 @@ declare module '@apiverve/contentfilter' {
       category:      null | string;
       matchedDomain: null | string;
       safetyRating:  null | string;
+      categories:    (null | string)[];
   }
 
   export default class contentfilterWrapper {
