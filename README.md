@@ -1,13 +1,13 @@
-# [Content Filter API](https://apiverve.com/marketplace/contentfilter?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)
+# [Content Filter API](https://apiverve.com/marketplace/contentfilter?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)
 
-Content Filter checks URLs against a comprehensive blocklist of 200,000+ domains categorized as ads-malware, fake news, gambling, adult content, or social media. Returns the specific category for blocked domains.
+Content Filter checks URLs against a comprehensive blocklist of 200,000+ domains categorized as ads-malware, fake news, gambling, adult content, or social media. Returns the specific category for blocked domains, plus every category a domain appears in across a 1.7M-domain index.
 
 The Content Filter API provides a simple, reliable way to integrate content filter functionality into your applications. Built for developers who need production-ready content filter capabilities without the complexity of building from scratch.
 
-**[View API Details →](https://apiverve.com/marketplace/contentfilter?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)**
+**[View API Details →](https://apiverve.com/marketplace/contentfilter?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)**
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![API Status](https://img.shields.io/badge/Status-Active-green.svg)](https://apiverve.com/marketplace/contentfilter?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)
+[![API Status](https://img.shields.io/badge/Status-Active-green.svg)](https://apiverve.com/marketplace/contentfilter?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)
 [![Method](https://img.shields.io/badge/Method-POST-blue.svg)](#)
 [![Platform](https://img.shields.io/badge/Platform-Multi--Platform-orange.svg)](#installation)
 
@@ -167,7 +167,7 @@ go get github.com/apiverve/contentfilter-api/go
 
 ## Documentation
 
-- 🏠 **API Home:** [Content Filter API](https://apiverve.com/marketplace/contentfilter?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)
+- 🏠 **API Home:** [Content Filter API](https://apiverve.com/marketplace/contentfilter?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)
 - 📚 **API Reference:** [docs.apiverve.com/ref/contentfilter](https://docs.apiverve.com/ref/contentfilter)
 - 📖 **OpenAPI Spec:** [openapi.yaml](./openapi.yaml)
 - 💡 **Examples:** [examples/](./examples/)
@@ -222,7 +222,10 @@ A real response from the Content Filter API:
     "isBlocked": true,
     "category": "porn",
     "matchedDomain": "pornhub.com",
-    "safetyRating": "unsafe"
+    "safetyRating": "unsafe",
+    "categories": [
+      "porn"
+    ]
   }
 }
 ```
@@ -231,7 +234,7 @@ A real response from the Content Filter API:
 
 ## Support & Community
 
-- 🏠 **API Home**: [Content Filter API](https://apiverve.com/marketplace/contentfilter?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)
+- 🏠 **API Home**: [Content Filter API](https://apiverve.com/marketplace/contentfilter?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)
 - 💬 **Support**: [https://apiverve.com/contact](https://apiverve.com/contact)
 - 🐛 **Issues**: [GitHub Issues](../../issues)
 - 📖 **Documentation**: [https://docs.apiverve.com](https://docs.apiverve.com)
