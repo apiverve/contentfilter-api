@@ -1,6 +1,6 @@
 # Content Filter API - PHP Package
 
-Content Filter checks URLs against a comprehensive blocklist of 200,000+ domains categorized as ads-malware, fake news, gambling, adult content, or social media. Returns the specific category for blocked domains.
+Content Filter checks URLs against a comprehensive blocklist of 200,000+ domains categorized as ads-malware, fake news, gambling, adult content, or social media. Returns the specific category for blocked domains, plus every category a domain appears in across a 1.7M-domain index.
 
 ## Installation
 
@@ -74,7 +74,10 @@ $client = new Client(
     "isBlocked": true,
     "category": "porn",
     "matchedDomain": "pornhub.com",
-    "safetyRating": "unsafe"
+    "safetyRating": "unsafe",
+    "categories": [
+      "porn"
+    ]
   }
 }
 ```
@@ -86,11 +89,11 @@ $client = new Client(
 
 ## Documentation
 
-For more information, visit the [API Documentation](https://docs.apiverve.com/ref/contentfilter?utm_source=packagist&utm_medium=readme).
+For more information, visit the [API Documentation](https://docs.apiverve.com/ref/contentfilter?utm_source=packagist&utm_medium=referral&utm_content=readme).
 
 ## Support
 
-- Website: [https://apiverve.com/marketplace/contentfilter?utm_source=php&utm_medium=readme](https://apiverve.com/marketplace/contentfilter?utm_source=php&utm_medium=readme)
+- Website: [https://apiverve.com/marketplace/contentfilter?utm_source=php&utm_medium=referral&utm_content=readme](https://apiverve.com/marketplace/contentfilter?utm_source=php&utm_medium=referral&utm_content=readme)
 - Email: hello@apiverve.com
 
 ## License

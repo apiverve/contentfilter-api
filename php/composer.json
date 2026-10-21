@@ -1,7 +1,7 @@
 {
     "name": "apiverve/contentfilter",
-    "description": "Content Filter checks URLs against a comprehensive blocklist of 200,000+ domains categorized as ads-malware, fake news, gambling, adult content, or social media. Returns the specific category for blocked domains.",
-    "version": "1.2.0",
+    "description": "Content Filter checks URLs against a comprehensive blocklist of 200,000+ domains categorized as ads-malware, fake news, gambling, adult content, or social media. Returns the specific category for blocked domains, plus every category a domain appears in across a 1.7M-domain index.",
+    "version": "1.2.2",
     "type": "library",
     "license": "MIT",
     "authors": [
@@ -21,7 +21,7 @@
         "adult content blocker",
         "gambling blocker"
     ],
-    "homepage": "https://apiverve.com/marketplace/contentfilter?utm_source=php&utm_medium=homepage",
+    "homepage": "https://apiverve.com/marketplace/contentfilter?utm_source=php&utm_medium=referral&utm_content=homepage",
     "support": {
         "email": "hello@apiverve.com",
         "docs": "https://docs.apiverve.com/ref/contentfilter",
