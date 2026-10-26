@@ -46,10 +46,10 @@ final _formatPatterns = {
 
 /// Content Filter API client.
 ///
-/// For more information, visit: https://apiverve.com/marketplace/contentfilter?utm_source=dart&utm_medium=readme
+/// For more information, visit: https://apiverve.com/marketplace/contentfilter?utm_source=dart&utm_medium=referral&utm_content=readme
 ///
 /// Parameters:
-/// * [url] (required) - The URL or domain to check [format: url]
+/// * [url] (required) - The URL or domain to check
 class ContentfilterClient {
   final String apiKey;
   final String baseUrl;
@@ -57,7 +57,7 @@ class ContentfilterClient {
 
   /// Validation rules for parameters.
   static final Map<String, ValidationRule> _validationRules = <String, ValidationRule>{
-    'url': ValidationRule(type: 'string', required: true, format: 'url'),
+    'url': ValidationRule(type: 'string', required: true),
   };
 
   ContentfilterClient(this.apiKey, {
